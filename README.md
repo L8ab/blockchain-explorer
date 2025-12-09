@@ -1,23 +1,51 @@
-# ⛓️ Blockchain Explorer
+# Blockchain Explorer
 
-Comprehensive blockchain analytics platform with multi-chain support.
+A comprehensive blockchain explorer for Ethereum network with Web3.js integration.
 
 ## Features
-- Multi-chain support (Ethereum, Bitcoin, Polygon)
-- Real-time transaction monitoring
-- Smart contract analysis
-- Token tracking and analytics
-- DeFi protocol integration
-- Advanced search and filtering
-- Developer API
+
+- Block information retrieval
+- Transaction details
+- Address balance checking
+- Real-time blockchain data
+- RESTful API
 
 ## Tech Stack
-- React + TypeScript
-- Node.js + Express
-- Web3.js / Ethers.js
-- PostgreSQL
-- Redis
+
+- **Backend**: Node.js, Express.js
+- **Blockchain**: Web3.js, Ethereum
+- **API**: RESTful endpoints
+
+## Project Structure
+
+\`\`\`
+blockchain-explorer/
+├── src/
+│   ├── services/        # Blockchain service
+│   ├── routes/          # API routes
+│   ├── utils/           # Formatters
+│   └── index.js         # Server
+└── package.json
+\`\`\`
+
+## Installation
+
+\`\`\`bash
+npm install
+\`\`\`
+
+## Configuration
+
+\`\`\`
+ETHEREUM_RPC_URL=https://mainnet.infura.io/v3/YOUR_KEY
+\`\`\`
+
+## API Endpoints
+
+- \`GET /api/block/:blockNumber\` - Get block information
+- \`GET /api/transaction/:txHash\` - Get transaction details
+- \`GET /api/balance/:address\` - Get address balance
 
 ---
 
-**POWERED BY L8AB SYSTEMS** ⚡
+**POWERED BY L8AB SYSTEMS**
